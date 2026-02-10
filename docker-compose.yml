@@ -31,7 +31,7 @@ services:
         "${OPENCLAW_GATEWAY_BIND:-lan}",
         "--port",
         "18789",
-        "--allow-unconfigured"
+        # Removed --allow-unconfigured to enforce auth
       ]
 
   openclaw-cli:
