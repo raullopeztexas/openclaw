@@ -3,7 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: ${OPENCLAW_IMAGE:-openclaw:local}
+    # Removed explicit image name to avoid build conflict
+    # image: ${OPENCLAW_IMAGE:-openclaw:local}
     environment:
       HOME: /home/node
       TERM: xterm-256color
@@ -34,7 +35,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: ${OPENCLAW_IMAGE:-openclaw:local}
+    # Removed explicit image name to avoid build conflict
+    # image: ${OPENCLAW_IMAGE:-openclaw:local}
     environment:
       HOME: /home/node
       TERM: xterm-256color
